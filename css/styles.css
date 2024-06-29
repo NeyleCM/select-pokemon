@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,11 +46,13 @@ table {
 }
 /* --- DESDE AQUÍ ----- */
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
 
 header {
-    font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-style: normal;
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -97,22 +82,32 @@ header {
     gap: 20px;
 }
 
-.pokemon-select {
+#pokemon-select {
 background-color: rgb(192, 238, 222);
-font-size: 50px;
+font-size: 20px;
+font-weight: 400;
+background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2));
+transition: all .3s linear;
+border-radius: 10px;
 }
 
-.pokemon-select:hover {
-    background-color: rgb(98, 230, 230);
-    transform: scale(1.5);
+#pokemon-select:hover {
+    background-color: rgb(101, 121, 114);
+    background: linear-gradient(rgba(80, 117, 126, 0.1), rgba(0,0,0,0.2));
+    transform: scale(1.2);
+  transition: all .3s linear;
+}
 
+#pokemon-select option {
+  background: linear-gradient(rgba(80, 117, 126, 0.1), rgba(0,0,0,0.2));
 }
 
 #get-pokemon {
     border: green 2px dashed;
-background-color:rgb(158, 224, 184);
+    border-radius: 15px;
+background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2));
 padding: 10px;
-font-size: 400;
+color: rgb(23, 63, 23);
 }
 
 .imagen {
